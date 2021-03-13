@@ -1,6 +1,6 @@
 import { MessageService } from "./message.service"
 
-describe('mesage service', () => {
+describe('MessageService', () => {
 
   let service: MessageService;
 
@@ -23,4 +23,4 @@ describe('mesage service', () => {
     expect(service.messages.length).toBe(0);
   });
 
-})
+});

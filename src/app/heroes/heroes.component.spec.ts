@@ -1,9 +1,8 @@
-import { tick } from "@angular/core/src/render3";
-import { fakeAsync } from "@angular/core/testing";
 import { of } from "rxjs";
 import { HeroesComponent } from "./heroes.component";
 
-describe('heroe component', () => {
+describe('HeroComponent', () => {
+
   let component: HeroesComponent;
   let heroes;
   let mockHeroService;
@@ -40,9 +39,8 @@ describe('heroe component', () => {
       component.heroes = heroes;
       component.delete(heroes[2]);
       expect(subscribeSpy.subscribe).toHaveBeenCalled();
-    })
+    });
 
   });
-
 
 });
